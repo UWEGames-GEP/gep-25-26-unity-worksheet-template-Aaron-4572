@@ -20,4 +20,12 @@ public class PlayerCharacterController : ThirdPersonController
         }
             
     }
+
+    public void OnInventory(InputValue inputValue)
+    {
+        if (inputValue.isPressed)
+        {
+            FindAnyObjectByType<InventoryUI>().ToggleInventory();
+        }
+    }
 }

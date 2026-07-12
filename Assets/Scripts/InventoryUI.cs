@@ -8,6 +8,13 @@ public class InventoryUI : MonoBehaviour
     public Button itemButtonPrefab;
     public Transform buttonParent;
 
+    public GameObject inventoryPanel;
+    
+    public void ToggleInventory()
+    {
+        inventoryPanel.SetActive(!inventoryPanel.activeSelf);
+    }
+
     public void RefreshUI()
     {
         foreach (Transform child in buttonParent)

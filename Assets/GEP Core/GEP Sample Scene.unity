@@ -316,7 +316,6 @@ GameObject:
   - component: {fileID: 288868163}
   - component: {fileID: 288868165}
   - component: {fileID: 288868164}
-  - component: {fileID: 288868166}
   - component: {fileID: 288868167}
   m_Layer: 5
   m_Name: Inventory Panel
@@ -384,21 +383,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 288868162}
   m_CullTransparentMesh: 1
---- !u!114 &288868166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 288868162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44bdb97fea6b2194a9c16e9c6ae53aa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventory: {fileID: 1630770136}
-  itemButtonPrefab: {fileID: 118356414}
-  buttonParent: {fileID: 288868163}
 --- !u!114 &288868167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -883,6 +867,7 @@ GameObject:
   - component: {fileID: 1024905209}
   - component: {fileID: 1024905208}
   - component: {fileID: 1024905207}
+  - component: {fileID: 1024905211}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -973,6 +958,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1024905211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024905206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44bdb97fea6b2194a9c16e9c6ae53aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 1630770136}
+  itemButtonPrefab: {fileID: 118356414}
+  buttonParent: {fileID: 288868163}
+  inventoryPanel: {fileID: 288868162}
 --- !u!1001 &1068353130
 PrefabInstance:
   m_ObjectHideFlags: 0
